@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Fernando Garcia">
+    <meta name="author" content="Kainan Junior">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <script src="assets/js/.js"></script>
+    <title>Ramirez Guincho</title>
+</head>
+<body>
+    <header>
+        <nav class="header" id="header">
+             <button onclick="toggleSidebar()" class="btn-icon-header">
+                 <img src="assets/imagens/reorder-four-outline.svg" alt="menu"> 
+             </button>
+             <div class="logo-header">
+                 <img class="logo-menu" src="assets/imagens/brasao-ramirez.png" alt="logo ramirez">
+             </div>
+             <div class="navegacao-header" id="navegacao-header">
+                 <button onclick="toggleSidebar()" class="btn-icon-header">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Close</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"  stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+                 </button>
+                 <a class="dec-link" href="card-info">Home</a>
+                 <a class="dec-link" href="#">Serviços</a>
+                 <a class="dec-link" href="#">Contato</a>
+                 <a class="dec-link" href="#">Regiões Atendidas</a>
+                 <a class="dec-link" href="#">Sobre nós</a>
+             </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <div class="info">
+                    <div class="color-block">
+                        <div class="block">
+                            <div class="text-info">
+                                <a href="">
+                                    <h1 class="text-hover">Precisando de Guincho?</h1>
+                                </a>
+                                <h2 class="text-hover">(11) 97062-5066</h2><br><br>
+                                <div class="card-info">
+                                    <img src="assets/imagens/cartoes.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="conteudo">
+                    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="space">
+
+            </div>
+            <div class="grid">
+                <div class="text">
+
+                </div>
+                <h1><strong>RAMIREZ GUINCHO</strong></h1>
+                <h2>Solicite um Orçamento!</h2>
+                <h3>A Ramirez Guinchos oferece um serviço de guincho diferenciado e com preço acessível Enfim;</h3><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511970625066" target="_blank" >Entre em Contato</a>
+                <h3>Porque Teremos satisfação de atendê-lo da melhor maneira possível.
+                Então; Confira a lista de cidades que atendemos <strong>24 horas com guincho e reboque.</strong></h3>
+            </div>
+            <div button>
+
+            </div>
+        </section>
+
+
+    </main>
+   <footer>
+    
+   </footer>
+   <script>
+    var header = document.getElementById('header');
+    var navigationHeader = document.getElementById('navegacao-header');
+    var content = document.getElementById('content');
+    var showSidebar = false;
+
+    function toggleSidebar()
+    {
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            navigationHeader.style.marginLeft = '-15vw';
+            navigationHeader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            navigationHeader.style.marginLeft = '-100vw';
+            navigationHeader.style.animationName = '';
+            content.style.filter = '';
+        }
+    }
+
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            showSidebar = true;
+            toggleSidebar();
+        }
+    }
+
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 768 && showSidebar) 
+        {  
+            showSidebar = true;
+            toggleSidebar();
+        }
+    });
+   </script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

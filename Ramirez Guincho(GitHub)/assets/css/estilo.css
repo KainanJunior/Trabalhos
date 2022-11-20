@@ -1,0 +1,142 @@
+:root{
+    --color-white: #ffffff;
+    --color-white2: #e0e0e0;
+    --color-gray:#1F1F1F;
+    --color-basic:#FF4500;
+    --color-black1:#000000;
+    --color-black2: #00000065;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+  text-decoration: none; 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-white2);
+    color: var(--color-black1);
+}
+.logo-menu {
+    width: 100px;
+}
+.header,
+.navegacao-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    background-color: var(--color-white);
+    height: 6em ;
+    justify-content: space-between;
+    padding: 0 14%;
+    box-shadow: 0px 1px var(--color-gray);
+}
+.navegacao-header{
+    gap: 3em;
+}
+.navegacao-header a{
+    text-decoration: none;
+    color: var(--color-black1);
+    font-size: 20px;
+    transition: 1s;
+    font-weight: bold;
+    box-shadow: 0px 3px #FF4500;
+}
+.dec-link:hover{
+    background-color: var(--color-gray);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-icon-header{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: var(--color-black1);
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+.color-block{
+    background:url(../imagens/ramires-guincho-24h-sp2.jpeg);
+    height: 500px;
+    background-size: 100%;
+    display: flex;
+    align-items:center;
+    padding: 0 20% ;
+}
+.color-block{
+    gap: 3em;
+}
+.block{
+    background-color: var(--color-black2);
+    padding: 12.3% 10%;
+    align-items: center;
+}
+.img-guincho{
+    width: 1700px;
+    height: 680px;
+}
+.text-hover{
+    font-size: 35px;
+    color: var(--color-white);
+}
+.text-hover{
+    font-size: 49px;
+}
+.text-hover:hover,
+.text-hover:hover{
+    box-shadow: 0 1px;
+}
+.space{
+    width: 100%;
+    background-color: var(--color-gray);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+hr{
+    width: 100%;
+    height: 2px;
+    border: 3px var(--color-basic);
+    background-color: var(--color-basic);
+}
+.grid{
+    margin-left: 190px;
+    margin-top: 80px;
+}
+@media screen and (max-width: 768px){
+    .btn-icon-header{
+        display: block;
+    }
+    .navegacao-header{
+        position: absolute;
+        flex-direction: column ;
+        top: 0;
+        background-color: var(--color-gray);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+        transition: 1s;
+    }
+    .logo-menu{
+        width: 114px;
+    }
+    .navegacao-header a{
+        color: var(--color-white);
+        
+    }
+    .btn-close{
+        color: var(--color-white);
+        width: 25px;
+        height: 25px;
+    }
+    .ionicon{
+        color: var(--color-white);
+    }
+}
